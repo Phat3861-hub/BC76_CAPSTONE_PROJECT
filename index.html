@@ -39,6 +39,66 @@
 </head>
 
 <body>
+    <header>
+        <div class="header_content row g-0">
+            <div class="header_logo col-2">
+                <div class="logo_content">
+                    <a href="#">
+                        <img src="./img/logo_c86591d6-6635-423b-9577-f0b4dbb25b44_300x.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="header_search col-1 ">
+                <div class="search_bg">
+                    <div class="search_icon text-center ">
+                        <a href="#" class="text-white">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p class="search_text">SEARCH</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 d-flex justify-content-between align-items-center">
+                <div class="header_nav ">
+                    <nav>
+                        <ul class="d-flex align-items-center">
+                            <li class=""><a class="active" href="#">HOME</a></li>
+                            <li class=""><a href="#">ABOUT US</a></li>
+                            <li class=""><a href="#">CAROUSEL</a></li>
+                            <li class=""><a href="#">SHOP</a></li>
+                            <li class=""><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_right">
+                    <div class="right_content d-flex">
+                        <ul class="right_menu d-flex">
+                            <li class="right_item  text-center">
+                                <a href="#" class="right_item_content text-center">
+                                    <i class="fa-regular fa-user"></i>
+                                    <p class="account_text">MY ACCOUNT</p>
+                                </a>
+                            </li>
+                            <li class="right_item  text-center">
+                                <a href="#" class="right_item_content text-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p class="account_text">WISHLIST</p>
+                                </a>
+                            </li>
+                            <li class="right_item  text-center">
+                                <a href="#" class="right_item_content text-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <p class="account_text">CART</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -79,6 +139,13 @@
 
     <script src="./js/index.js"></script>
     <script src="./validation/validation.js"></script>
+
+    <script type="text/JavaScript">
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
 </body>
 
 </html>
