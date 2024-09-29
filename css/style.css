@@ -71,6 +71,9 @@ header .header_content .header_search .search_bg .search_icon a p.search_text {
 header .header_content .header_search .search_bg .search_icon a:hover svg {
   animation: move-horizontal 0.3s ease-in-out;
 }
+header .header_content .header_nav {
+  background-color: white;
+}
 header .header_content .header_nav nav ul li {
   padding: 41px 22px;
   cursor: pointer;
@@ -91,6 +94,9 @@ header .header_content .header_nav nav ul li:hover a {
 }
 header .header_content .header_nav nav ul li .active {
   color: #8cc32e;
+}
+header .header_content .header_right {
+  background-color: white;
 }
 header .header_content .header_right .right_content .right_menu .right_item {
   padding: 32px 20px;
@@ -128,6 +134,72 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
 header.sticky .header_content .header_right .right_content .right_menu .right_item .right_item_content {
   font-size: 11px;
   transition: font-size 0.5s ease;
+}
+
+.header_space {
+  margin-bottom: 106px;
+}
+
+.pc_carousel .carousel_item {
+  position: relative;
+  background: url(../img/slideshow-1_8f45ff48-8631-4b20-826e-5f477c1502bd_1920x850.jpg) no-repeat center;
+  background-size: cover;
+  min-height: calc(100vh - 90px);
+  z-index: 0;
+  display: grid;
+  align-items: center;
+  padding: 3em 0;
+}
+.pc_carousel .carousel_item .carousel_info {
+  position: relative;
+  z-index: 2;
+}
+.pc_carousel .carousel_item .carousel_info .carousel_content {
+  top: -200px;
+  text-align: left;
+  color: #fff;
+}
+.pc_carousel .carousel_item .carousel_info .carousel_content .caption-1 {
+  font-size: 70px;
+  line-height: 48px;
+  padding: 0;
+}
+.pc_carousel .carousel_item .carousel_info .carousel_content .caption-1 span {
+  color: #8cc32e;
+}
+.pc_carousel .carousel_item .carousel_info .carousel_content .caption-2 {
+  font-size: 12rem;
+  opacity: 0.6;
+}
+.pc_carousel .carousel_item2 {
+  background: url(../img/slideshow-2_1cdbfd27-ae25-4a38-9d4f-a913a692bea7_1920x850.jpg) no-repeat center;
+}
+.pc_carousel .carousel_item3 {
+  background: url(../img/slideshow-3_4c7a7862-bfd8-4c8c-a7ac-37b5a7e7f191_1920x850.jpg) no-repeat center;
+}
+.pc_carousel .owl-dots {
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+}
+.pc_carousel .owl-dots button.owl-dot {
+  padding: 1px 6px !important;
+}
+.pc_carousel .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 2px;
+  background: #fff;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+  opacity: 0.4;
+}
+.pc_carousel .owl-theme .owl-dots .owl-dot:hover span, .pc_carousel .owl-theme .owl-dots .owl-dot.active span {
+  background: #8cc32e;
+  opacity: 1;
 }
 
 .back_to_top {
