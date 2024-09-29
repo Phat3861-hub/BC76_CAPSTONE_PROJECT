@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
         integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animate cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
     <link rel="stylesheet" href="./css/style.css">
@@ -58,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="col-9 d-flex justify-content-between align-items-center bg-white">
                 <div class="header_nav ">
                     <nav>
                         <ul class="d-flex align-items-center">
@@ -98,6 +100,61 @@
             </div>
         </div>
     </header>
+    <div class="header_space"></div>
+
+    <section class="pc_carousel">
+        <div class="owl-carousel owl-theme" id="owl-banner">
+            <div class="carousel_item slide-1 ">
+                <div class="carousel_info">
+                    <div class="container">
+                        <div class="carousel_content position-absolute ">
+                            <div class="caption-1 animate__animated animate__fadeInRight">
+                                THE
+                                <span>SHOE</span>
+                                THAT ADAPTS TO YOU
+                            </div>
+                            <div class="caption-2 ">
+                                TENNIS SHOE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_item carousel_item2">
+                <div class="carousel_info">
+                    <div class="container">
+                        <div class="carousel_content position-absolute">
+                            <div class=" caption-1">
+                                THE
+                                <span>SHOE</span>
+                                THAT ADAPTS TO YOU
+                            </div>
+                            <div class="caption-2  ">
+                                STREET STYLE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_item carousel_item3">
+                <div class="carousel_info">
+                    <div class="container">
+                        <div class="carousel_content position-absolute">
+                            <div class="caption-1">
+                                THE
+                                <span>SHOE</span>
+                                THAT ADAPTS TO YOU
+                            </div>
+                            <div class="caption-2 ">
+                                FOOTBALL SHOE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -132,6 +189,13 @@
     <!-- back to top  -->
     <script src="./utils/back-to-top-master/assets/js/util.js"></script>
     <script src="./utils/back-to-top-master/assets/js/main.js"></script>
+    <!-- wow js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 
 
@@ -146,6 +210,22 @@
             header.classList.toggle("sticky", window.scrollY > 0)
         })
     </script>
+
+    <script>
+        $(document).ready(function () {
+            var owl = $('#owl-banner');
+
+            owl.owlCarousel({
+                loop: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                dots: true,
+                animateOut: 'fadeOut',
+            });
+        });
+    </script>
+
 </body>
 
 </html>
