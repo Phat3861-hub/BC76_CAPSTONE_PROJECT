@@ -26,14 +26,8 @@ ul {
   --bs-gutter-x: 0;
 }
 
-.col-search {
-  flex: 0 0 auto;
-  width: 4.333333%;
-}
-
-.col-nav {
-  flex: 0 0 auto;
-  width: 79%;
+span {
+  text-decoration: none;
 }
 
 header {
@@ -144,11 +138,12 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   position: relative;
   background: url(../img/slideshow-1_8f45ff48-8631-4b20-826e-5f477c1502bd_1920x850.jpg) no-repeat center;
   background-size: cover;
-  min-height: calc(100vh - 90px);
+  height: calc(100vh - 90px);
   z-index: 0;
   display: grid;
   align-items: center;
   padding: 3em 0;
+  width: 100%;
 }
 .pc_carousel .carousel_item .carousel_info {
   position: relative;
@@ -170,6 +165,7 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
 .pc_carousel .carousel_item .carousel_info .carousel_content .caption-2 {
   font-size: 12rem;
   opacity: 0.6;
+  line-height: 170px;
 }
 .pc_carousel .carousel_item2 {
   background: url(../img/slideshow-2_1cdbfd27-ae25-4a38-9d4f-a913a692bea7_1920x850.jpg) no-repeat center;
@@ -200,6 +196,42 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
 .pc_carousel .owl-theme .owl-dots .owl-dot:hover span, .pc_carousel .owl-theme .owl-dots .owl-dot.active span {
   background: #8cc32e;
   opacity: 1;
+}
+
+.represent_product .represent_content .represent_item {
+  overflow: hidden;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+}
+.represent_product .represent_content .represent_item .represent_img img {
+  width: 70%;
+  height: auto;
+  transform: rotate(45deg);
+}
+.represent_product .represent_content .represent_item .represent_text {
+  top: 25px;
+  position: absolute;
+  left: 150px;
+  text-align: right;
+  font-weight: 900;
+}
+.represent_product .represent_content .represent_item .represent_text h3 {
+  font-weight: 900;
+}
+.represent_product .represent_content .represent_item .represent_text .text_price {
+  color: gray;
+  font-size: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.represent_product .represent_content .represent_item .represent_text .text_price span {
+  color: #d33442;
+  font-size: 40px;
+  text-decoration: none;
+}
+.represent_product .represent_content .represent_item .represent_text a {
+  margin-top: 40px;
 }
 
 .back_to_top {
@@ -252,5 +284,81 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .pc_carousel .carousel_item {
+    padding: 2.5em 0;
+  }
+  .pc_carousel .carousel_item .carousel_info {
+    z-index: 2;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content {
+    top: -150px;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content .caption-1 {
+    font-size: 60px;
+    line-height: 40px;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content .caption-2 {
+    font-size: 10rem;
+    line-height: 156px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .pc_carousel .carousel_item {
+    padding: 2em 0;
+  }
+  .pc_carousel .carousel_item .carousel_info {
+    z-index: 2;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content {
+    top: -120px;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content .caption-1 {
+    font-size: 50px;
+    line-height: 35px;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content .caption-2 {
+    font-size: 8rem;
+    line-height: 115px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pc_carousel .carousel_item {
+    padding: 1.5em 0;
+  }
+  .pc_carousel .carousel_item .carousel_info {
+    z-index: 2;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content {
+    top: -100px;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content .caption-1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content .caption-2 {
+    font-size: 6rem;
+    line-height: 120px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pc_carousel .carousel_item {
+    padding: 1em 0;
+  }
+  .pc_carousel .carousel_item .carousel_info {
+    z-index: 2;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content {
+    top: -50px;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content .caption-1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .pc_carousel .carousel_item .carousel_info .carousel_content .caption-2 {
+    font-size: 5rem;
+    line-height: 85px;
   }
 }/*# sourceMappingURL=style.css.map */
