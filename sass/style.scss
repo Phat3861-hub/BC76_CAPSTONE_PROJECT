@@ -242,13 +242,16 @@ header.sticky {
   .represent_content {
     .represent_item {
       overflow: hidden;
-      border: 1px solid black;
+      border: 5px dashed #d3344100;
       position: relative;
       display: flex;
+      transition: all 0.5s;
+      transform: translateY(0);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
       .represent_img {
         img {
-          width: 70%;
+          width: 65%;
           height: auto;
           transform: rotate(45deg);
         }
@@ -257,7 +260,7 @@ header.sticky {
       .represent_text {
         top: 25px;
         position: absolute;
-        left: 150px;
+        left: 140px;
         text-align: right;
         font-weight: 900;
 
@@ -279,6 +282,195 @@ header.sticky {
 
         a {
           margin-top: 40px;
+          color: #d33442;
+          &:hover {
+            color: #d33441d5;
+          }
+        }
+      }
+      &:hover {
+        border: 5px dashed #d33442;
+        transform: translateY(-20px);
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.sell_product {
+  .sell_content {
+    .nav-pills {
+      --bs-nav-pills-link-active-bg: #fff;
+      --bs-nav-pills-link-active-color: #000;
+      --bs-nav-link-color: #00000052;
+    }
+    .nav {
+      .nav-item {
+        .nav-link {
+          transition: all 0.5s;
+          padding-bottom: 20px;
+          cursor: pointer;
+          .button_content {
+            .button_check {
+              position: relative;
+              width: 10px;
+              height: 30px;
+              background-color: #fff;
+              border: 1px solid black;
+              margin-right: 40px;
+              svg {
+                position: absolute;
+                font-size: 33px;
+                left: -10px;
+                color: #8cc32e;
+                opacity: 0;
+              }
+            }
+            .button_text {
+              text-align: left;
+              .text_title {
+                font-size: 2rem;
+                font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+                font-weight: 800;
+                text-transform: uppercase;
+                margin-bottom: 19px;
+              }
+              .text_main {
+                font-size: 4rem;
+                font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+                font-weight: 800;
+                text-transform: uppercase;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+        &:hover {
+          .nav-link {
+            color: #000;
+            .button_content {
+              .button_check {
+                svg {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+
+        .active {
+          .button_content {
+            .button_check {
+              svg {
+                opacity: 1;
+              }
+            }
+            .button_check {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+    .tab-content {
+      .tab-pane {
+        .product_item {
+          .product_item_img {
+            .item_img {
+              position: relative;
+              img {
+                width: 100%;
+              }
+              .img_opacity {
+                position: absolute;
+                left: 0;
+                opacity: 0;
+                transition: all 0.5s;
+              }
+            }
+          }
+          .product_item_info {
+            .product_name {
+              font-size: 12px;
+              font-weight: 500;
+              font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+              color: #444;
+              transition: all 0.5s;
+              &:hover {
+                color: #8cc32e;
+              }
+            }
+          }
+          .product_price {
+            p {
+              color: #222;
+              font-size: 13px;
+              font-weight: 700;
+              font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+            }
+            .product_button {
+              a {
+                display: flex;
+                width: 30px;
+                height: 30px;
+                background-color: #f8f8f8;
+                margin: 0 5px;
+                text-align: center;
+                align-items: center;
+                border-radius: 10px;
+                transition: all 0.5s;
+                visibility: hidden;
+                opacity: 0;
+                svg {
+                  color: #222;
+                  margin-left: 7px;
+                }
+                &:hover {
+                  background-color: #8cc32e;
+                  svg {
+                    color: #fff;
+                  }
+                }
+              }
+
+              .btn_check {
+                transform: translateY(20px);
+                transition: 0.2s;
+              }
+              .btn_heart {
+                transform: translateY(30px);
+                transition: 0.4s;
+              }
+              .btn_plus {
+                transform: translateY(40px);
+                transition: 0.7s;
+              }
+            }
+          }
+          &:hover {
+            .product_item_img {
+              .item_img {
+                .img_opacity {
+                  opacity: 1;
+                }
+              }
+            }
+            .product_button {
+              a {
+                visibility: unset;
+                opacity: 1;
+              }
+              .btn_check {
+                transform: translateY(0);
+              }
+              .btn_heart {
+                transform: translateY(0);
+              }
+              .btn_plus {
+                transform: translateY(0);
+              }
+            }
+          }
         }
       }
     }
