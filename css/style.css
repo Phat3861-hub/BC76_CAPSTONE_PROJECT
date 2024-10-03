@@ -380,6 +380,68 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   transform: translateY(0);
 }
 
+.feature_product {
+  margin: 158px 0;
+  background: linear-gradient(to right, #0e0f13, #21435c);
+}
+.feature_product .feature_content {
+  padding-top: 75px;
+  padding-bottom: 105px;
+}
+.feature_product .feature_content .feature_img {
+  position: relative;
+  z-index: 9;
+  margin: -149px 0 -199px;
+  animation: feature_move 5s infinite;
+}
+.feature_product .feature_content .feature_img img {
+  margin-right: 25px;
+}
+.feature_product .feature_content .feature_text {
+  color: #fff;
+}
+.feature_product .feature_content .feature_text .feature_info .span_feature {
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+.feature_product .feature_content .feature_text .feature_info .span_feature span {
+  color: #8cc32e;
+}
+.feature_product .feature_content .feature_text .feature_info .title_feature {
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 35px;
+  margin-bottom: 29px;
+  margin-right: 130px;
+}
+.feature_product .feature_content .feature_text .feature_info a {
+  background: #8cc32e;
+  min-width: 150px;
+  min-height: 46px;
+  line-height: 46px;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.feature_product .feature_content .feature_text .feature_info a span {
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .feature_product .feature_content .feature_img {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .feature_product .feature_content .feature_img img {
+    max-width: 40%;
+  }
+}
 .back_to_top {
   font-size: 20px;
   width: 50px;
@@ -430,6 +492,17 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes feature_move {
+  0% {
+    transform: rotate(1deg) translate(2px, 2px);
+  }
+  50% {
+    transform: rotate(-1deg) translate(-2px, -2px);
+  }
+  100% {
+    transform: rotate(1deg) translate(2px, 2px);
   }
 }
 @media screen and (max-width: 1200px) {
