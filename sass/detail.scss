@@ -1,0 +1,307 @@
+.home_product {
+  padding: 20px 0;
+  background-color: #f3f3f3;
+  .home_name {
+    font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+    a {
+      margin-right: 15px;
+      position: relative;
+      color: #666;
+      transition: all 0.5s;
+      &:hover {
+        color: #8cc32e;
+      }
+    }
+
+    svg {
+      font-size: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.product_info {
+  padding: 90px 0;
+  .info_img {
+    .main_img {
+      margin-bottom: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.266);
+      img {
+        width: 100%;
+      }
+    }
+    .carousel_img {
+      .carousel_item {
+        border: 1px solid rgba(0, 0, 0, 0.266);
+        margin-right: 20px;
+      }
+      .carousel_item.active {
+        border: 1px solid #8cc32e;
+      }
+    }
+  }
+  .full_info {
+    .info_title {
+      h1 {
+        font-size: 1.3rem;
+        color: #222;
+        font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+        font-weight: 500;
+        margin: -4px 0 22px;
+      }
+    }
+    .info_rating {
+      font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      color: #666;
+      text-transform: uppercase;
+      margin-right: 13px;
+      svg {
+        font-size: 17px;
+        color: yellow;
+      }
+    }
+    .info_price {
+      color: #222;
+      font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin: 20px 0 18px;
+    }
+    .info_available {
+      font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: #444;
+      margin-bottom: 10px;
+      span {
+        font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        color: #6bb853;
+        text-transform: uppercase;
+        margin-left: 10px;
+        svg {
+          margin-left: 10px;
+        }
+      }
+    }
+    .info_sku {
+      margin-bottom: 10px;
+      font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+      font-weight: 700;
+      color: #444;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .info_categori {
+      margin-bottom: 10px;
+      margin-right: 5px;
+      font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: #444;
+      a {
+        font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+        font-weight: 400;
+        color: #666;
+        font-size: 12px;
+        transition: all 0.5s;
+        &:hover {
+          color: #8cc32e;
+        }
+      }
+    }
+    .info_tag {
+      margin-bottom: 10px;
+      margin-right: 5px;
+      font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: #444;
+      a {
+        font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+        font-weight: 400;
+        color: #666;
+        font-size: 12px;
+        transition: all 0.5s;
+        &:hover {
+          color: #8cc32e;
+        }
+      }
+    }
+    .info_color {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-right: 5px;
+      font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: #444;
+      a {
+        margin: 0 10px;
+        transition: all 0.5s;
+        border: 1px solid rgba(0, 0, 0, 0.716);
+        &:hover {
+          border: 1px solid rgb(201, 197, 197);
+        }
+      }
+    }
+    .info_size {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 12px;
+      margin-bottom: 10px;
+      margin-right: 5px;
+      font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: #444;
+      a {
+        margin: 0 10px;
+        transition: all 0.5s;
+        color: #222;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.716);
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 26px;
+        &:hover {
+          border: 1px solid rgb(201, 197, 197);
+          background-color: #444;
+          color: #fff;
+        }
+      }
+    }
+    .info_addCart {
+      display: flex;
+      margin: 40px 0;
+      .info_quantity {
+        display: flex;
+        border: 1px solid rgba(0, 0, 0, 0.392);
+        p {
+          display: flex;
+          width: 70px;
+          align-items: center;
+          justify-content: center;
+        }
+        button {
+          width: 40px;
+          height: 60px;
+          border: none;
+          transition: all 0.5s;
+          &:hover {
+            background-color: #222;
+            color: white;
+          }
+        }
+      }
+      .btn_add {
+        margin: 0 10px;
+        border: none;
+        width: 250px;
+        border-radius: 10px;
+        background-color: #f7af24;
+        color: white;
+        transition: all 0.5s;
+        font-size: 14px;
+        svg {
+          margin-right: 10px;
+        }
+        &:hover {
+          background-color: #8cc32e;
+        }
+      }
+    }
+    .info_share {
+      border-bottom: 1px solid #eeeeee;
+      border-top: 1px solid #eeeeee;
+      margin-top: 35px;
+      display: flex;
+      align-items: center;
+      .article_size_guide,
+      .article_share,
+      .article_print {
+        padding: 12.5px 30px;
+        transition: all 0.5s;
+        a {
+          svg {
+            margin-right: 15px;
+            color: #8cc32e;
+            font-size: 1.5rem;
+          }
+          span {
+            font-size: 11px;
+            font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
+            color: #666;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+        &:hover {
+          background-color: #66666612;
+        }
+      }
+    }
+  }
+}
+
+.description {
+  .nav {
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+
+    .nav-item {
+      margin-right: 60px;
+
+      .nav-link {
+        border: none;
+        border-bottom: 1px solid gray;
+        font-size: 1.8rem;
+        font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
+        font-weight: 700;
+        color: #bfbfbf;
+        display: block;
+        text-transform: uppercase;
+        padding: 13px 0;
+        position: relative;
+
+        &:hover {
+          color: #222;
+
+          &::after {
+            background: #8cc32e;
+            width: 100%;
+          }
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 3px;
+          background: transparent;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          transition: background 0.3s ease-in-out, width 0.3s ease-in-out;
+        }
+      }
+
+      .active {
+        color: #222;
+
+        &::after {
+          background: #8cc32e;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
