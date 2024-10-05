@@ -165,7 +165,6 @@ header.sticky {
     z-index: 0;
     display: grid;
     align-items: center;
-    padding: 3em 0;
     width: 100%;
     .carousel_info {
       position: relative;
@@ -375,26 +374,25 @@ header.sticky {
     .tab-content {
       .tab-pane {
         .product_item {
+          border: 1px solid gray;
           .product_item_img {
+            padding: 10px;
             .item_img {
               position: relative;
               img {
                 width: 100%;
-              }
-              .img_opacity {
-                position: absolute;
-                left: 0;
-                opacity: 0;
-                transition: all 0.5s;
+                border-bottom: 1px solid gray;
               }
             }
           }
           .product_item_info {
+            padding: 10px;
             .product_name {
               font-size: 12px;
-              font-weight: 500;
+              font-weight: 700;
               font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
               color: #444;
+              text-transform: uppercase;
               transition: all 0.5s;
               &:hover {
                 color: #8cc32e;
@@ -402,6 +400,7 @@ header.sticky {
             }
           }
           .product_price {
+            padding: 10px;
             p {
               color: #222;
               font-size: 13px;
@@ -448,13 +447,6 @@ header.sticky {
             }
           }
           &:hover {
-            .product_item_img {
-              .item_img {
-                .img_opacity {
-                  opacity: 1;
-                }
-              }
-            }
             .product_button {
               a {
                 visibility: unset;
@@ -490,6 +482,7 @@ header.sticky {
       animation: feature_move 5s infinite;
       img {
         margin-right: 25px;
+        width: 100%;
       }
     }
     .feature_text {
@@ -744,6 +737,8 @@ header.sticky {
   .product_content {
     .owl-carousel {
       .product_item {
+        border: 1px solid gray;
+        margin: 0 20px;
         padding: 0 15px;
         position: relative;
         @media screen and (max-width: 576px) {
@@ -753,6 +748,7 @@ header.sticky {
           img {
             margin-bottom: 15px;
             position: relative;
+            border-bottom: 1px solid gray;
           }
           .badge_sale {
             top: 0;
@@ -787,6 +783,8 @@ header.sticky {
               color: #444;
               transition: all 0.3s;
               font-size: 12px;
+              text-transform: uppercase;
+              font-weight: 700;
               &:hover {
                 color: #8cc32e;
               }
@@ -826,22 +824,6 @@ header.sticky {
           animation-duration: 0.8s;
           animation-fill-mode: forwards;
           opacity: 1;
-        }
-      }
-    }
-
-    .group_item_carousel {
-      display: flex;
-      a {
-        img {
-          width: 40px;
-          height: 40px;
-          margin-right: 8px;
-          border: 1px solid white;
-          transition: all 0.3s;
-          &:hover {
-            border: 1px solid #8cc32e;
-          }
         }
       }
     }

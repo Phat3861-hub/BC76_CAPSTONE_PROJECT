@@ -7,6 +7,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 li {
   list-style: none;
 }
@@ -143,7 +150,6 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   z-index: 0;
   display: grid;
   align-items: center;
-  padding: 3em 0;
   width: 100%;
 }
 .pc_carousel .carousel_item .carousel_info {
@@ -301,27 +307,35 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
 .sell_product .sell_content .nav .nav-item .active .button_content .button_check {
   color: #000;
 }
+.sell_product .sell_content .tab-content .tab-pane .product_item {
+  border: 1px solid gray;
+}
+.sell_product .sell_content .tab-content .tab-pane .product_item .product_item_img {
+  padding: 10px;
+}
 .sell_product .sell_content .tab-content .tab-pane .product_item .product_item_img .item_img {
   position: relative;
 }
 .sell_product .sell_content .tab-content .tab-pane .product_item .product_item_img .item_img img {
   width: 100%;
+  border-bottom: 1px solid gray;
 }
-.sell_product .sell_content .tab-content .tab-pane .product_item .product_item_img .item_img .img_opacity {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  transition: all 0.5s;
+.sell_product .sell_content .tab-content .tab-pane .product_item .product_item_info {
+  padding: 10px;
 }
 .sell_product .sell_content .tab-content .tab-pane .product_item .product_item_info .product_name {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
   color: #444;
+  text-transform: uppercase;
   transition: all 0.5s;
 }
 .sell_product .sell_content .tab-content .tab-pane .product_item .product_item_info .product_name:hover {
   color: #8cc32e;
+}
+.sell_product .sell_content .tab-content .tab-pane .product_item .product_price {
+  padding: 10px;
 }
 .sell_product .sell_content .tab-content .tab-pane .product_item .product_price p {
   color: #222;
@@ -364,9 +378,6 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   transform: translateY(40px);
   transition: 0.7s;
 }
-.sell_product .sell_content .tab-content .tab-pane .product_item:hover .product_item_img .item_img .img_opacity {
-  opacity: 1;
-}
 .sell_product .sell_content .tab-content .tab-pane .product_item:hover .product_button a {
   visibility: unset;
   opacity: 1;
@@ -397,6 +408,7 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
 }
 .feature_product .feature_content .feature_img img {
   margin-right: 25px;
+  width: 100%;
 }
 .feature_product .feature_content .feature_text {
   color: #fff;
@@ -616,6 +628,8 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   opacity: 0.8;
 }
 .product .product_content .owl-carousel .product_item {
+  border: 1px solid gray;
+  margin: 0 20px;
   padding: 0 15px;
   position: relative;
 }
@@ -627,6 +641,7 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
 .product .product_content .owl-carousel .product_item .product_info img {
   margin-bottom: 15px;
   position: relative;
+  border-bottom: 1px solid gray;
 }
 .product .product_content .owl-carousel .product_item .product_info .badge_sale {
   top: 0;
@@ -660,6 +675,8 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   color: #444;
   transition: all 0.3s;
   font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .product .product_content .owl-carousel .product_item .product_info span a:hover {
   color: #8cc32e;
@@ -696,19 +713,6 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
   opacity: 1;
-}
-.product .product_content .group_item_carousel {
-  display: flex;
-}
-.product .product_content .group_item_carousel a img {
-  width: 40px;
-  height: 40px;
-  margin-right: 8px;
-  border: 1px solid white;
-  transition: all 0.3s;
-}
-.product .product_content .group_item_carousel a img:hover {
-  border: 1px solid #8cc32e;
 }
 
 @keyframes fadeInRight {
