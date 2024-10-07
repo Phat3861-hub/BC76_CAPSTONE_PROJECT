@@ -32,7 +32,7 @@ function renderDataProduct(products, containerId) {
       <div class="col-6 col-sm-6 col-xl-3">
         <div class="product_item">
           <div class="product_item_img">
-            <a href="./html/detail.html?id=${id}" class="item_img">
+            <a href="./html/detail.html?productid=${id}" class="item_img">
               <img src="${image}" alt="${name}" />
             </a>
           </div>
@@ -45,7 +45,7 @@ function renderDataProduct(products, containerId) {
               <a class="btn_check" href="#"><i class="fa-solid fa-check"></i></a>
               <a class="btn_heart" href="#"><i class="fa-regular fa-heart"></i></a>
               <a class="btn_plus" href="#"><i class="fa-solid fa-plus"></i></a>
-            </div>
+            </div>  
           </div>
         </div>
       </div>
@@ -84,11 +84,11 @@ function renderProductCarousel(products) {
     content += `
       <div class="product_item">
         <div class="product_info">
-          <a href="./html/detail.html?id=${id}">
-            <img src="${image}" width="400" height="350" alt="${name}" />
+          <a href="./html/detail.html?productid=${id}">
+            <img src="${image}"  height="350" alt="${name}" />
           </a>
           <span>
-            <a href="./html/detail.html?id=${id}">${name}</a>
+            <a href="./html/detail.html?productid=${id}">${name}</a>
           </span>
           <p>$${price}</p>
         </div>
@@ -117,6 +117,49 @@ function renderProductCarousel(products) {
   carouselContainer.innerHTML = content;
 }
 
+function getRepresentProduct() {
+  http
+    .get("/")
+    .then((res) => {
+      const representProducts = res.data.content.slice(0, 3); // Limit to 3 products
+      renderRepresentProduct(representProducts);
+    })
+    .catch((err) => {
+      console.error("Error fetching represent product data:", err);
+    });
+}
+
+// Function to render the represent products in the section
+function renderRepresentProduct(products) {
+  let content = "";
+  products.forEach((product) => {
+    const { id, name, price, image } = product;
+    content += `
+      <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
+        <div class="represent_item wow animate__animated animate__zoomIn">
+          <div class="represent_img">
+            <img src="${image}" alt="${name}" />
+          </div>
+          <div class="represent_text">
+            <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
+            <h3>${name}</h3>
+            <p class="text_price">$${price}</p>
+            <a href="./html/detail.html?productid=${id}">SHOP NOW >></a>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  const representContainer = document.querySelector(".represent_content");
+  if (representContainer) {
+    representContainer.innerHTML = content;
+  } else {
+    console.error("Represent container not found.");
+  }
+}
+
 // Call functions to fetch and display products in tabs and carousel
 getDataProduct(); // For tabs
 getProductData(); // For Owl Carousel
+getRepresentProduct();

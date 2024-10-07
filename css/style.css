@@ -14,6 +14,11 @@ body {
   overflow-x: hidden;
 }
 
+div.disabled {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 li {
   list-style: none;
 }
@@ -217,7 +222,7 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
 .represent_product .represent_content .represent_item .represent_img img {
   width: 65%;
   height: auto;
-  transform: rotate(45deg);
+  transform: translateY(35px);
 }
 .represent_product .represent_content .represent_item .represent_text {
   top: 25px;
@@ -225,20 +230,16 @@ header.sticky .header_content .header_right .right_content .right_menu .right_it
   left: 140px;
   text-align: right;
   font-weight: 900;
+  text-transform: uppercase;
 }
 .represent_product .represent_content .represent_item .represent_text h3 {
   font-weight: 900;
 }
 .represent_product .represent_content .represent_item .represent_text .text_price {
-  color: gray;
+  color: #d33442;
   font-size: 20px;
   margin-bottom: 40px;
   margin-top: 20px;
-}
-.represent_product .represent_content .represent_item .represent_text .text_price span {
-  color: #d33442;
-  font-size: 40px;
-  text-decoration: none;
 }
 .represent_product .represent_content .represent_item .represent_text a {
   margin-top: 40px;
