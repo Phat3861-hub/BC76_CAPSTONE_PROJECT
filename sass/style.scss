@@ -252,31 +252,26 @@ header.sticky {
         img {
           width: 65%;
           height: auto;
-          transform: rotate(45deg);
+          transform: translateY(35px);
         }
       }
-
       .represent_text {
         top: 25px;
         position: absolute;
         left: 140px;
         text-align: right;
         font-weight: 900;
+        text-transform: uppercase;
 
         h3 {
           font-weight: 900;
         }
 
         .text_price {
-          color: gray;
+          color: #d33442;
           font-size: 20px;
           margin-bottom: 40px;
           margin-top: 20px;
-          span {
-            color: #d33442;
-            font-size: 40px;
-            text-decoration: none;
-          }
         }
 
         a {
@@ -1249,8 +1244,6 @@ footer {
             color: white;
             font-size: 12px;
           }
-        }
-        .coppy_img {
         }
       }
     }

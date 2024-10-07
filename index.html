@@ -41,6 +41,7 @@
 </head>
 
 <body>
+
   <header>
     <div class="header_content row g-0">
       <div class="header_logo col-2">
@@ -151,45 +152,7 @@
   <section class="represent_product py-5">
     <div class="container py-5">
       <div class="represent_content row g-3">
-        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
-          <div class="represent_item wow animate__animated animate__zoomIn">
-            <div class="represent_img">
-              <img src="./img/flip1.png" alt="" />
-            </div>
-            <div class="represent_text">
-              <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
-              <h3>RUNNING SHOES</h3>
-              <p class="text_price">$90.00 <span>$65.00</span></p>
-              <a href="#">SHOP NOW >></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
-          <div class="represent_item wow animate__animated animate__zoomIn">
-            <div class="represent_img">
-              <img src="./img/flip1.png" alt="" />
-            </div>
-            <div class="represent_text">
-              <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
-              <h3>RUNNING SHOES</h3>
-              <p class="text_price">$90.00 <span>$65.00</span></p>
-              <a href="#">SHOP NOW >></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
-          <div class="represent_item wow animate__animated animate__zoomIn">
-            <div class="represent_img">
-              <img src="./img/flip1.png" alt="" />
-            </div>
-            <div class="represent_text">
-              <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
-              <h3>RUNNING SHOES</h3>
-              <p class="text_price">$90.00 <span>$65.00</span></p>
-              <a href="#">SHOP NOW >></a>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -753,20 +716,26 @@
     });
   </script>
   <script>
-    $(document).ready(function () {
+    $(window).on('load', function () {
       let owl1 = $("#owl-product");
       owl1.owlCarousel({
         loop: false,
         margin: 2,
-        nav: true,
-        dots: true,
+        nav: false,
+        dots: false,
         responsive: {
           0: {
             items: 1,
           },
           576: {
+            items: 2,
+          },
+          992: {
             items: 3,
           },
+          1200: {
+            items: 3
+          }
         },
       });
     });

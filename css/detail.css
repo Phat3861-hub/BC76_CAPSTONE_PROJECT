@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .home_product {
   padding: 20px 0;
   background-color: #f3f3f3;
@@ -45,6 +51,8 @@
   font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
   font-weight: 500;
   margin: -4px 0 22px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .product_info .full_info .info_rating {
   font-family: Roboto, HelveticaNeue, Helvetica Neue, sans-serif;
@@ -256,7 +264,6 @@
 }
 .description .nav .nav-item .nav-link {
   border: none;
-  border-bottom: 1px solid gray;
   font-size: 1.8rem;
   font-family: Poppins, HelveticaNeue, Helvetica Neue, sans-serif;
   font-weight: 700;
@@ -280,7 +287,7 @@
   height: 3px;
   background: transparent;
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   left: 0;
   transition: background 0.3s ease-in-out, width 0.3s ease-in-out;
 }
@@ -290,4 +297,14 @@
 .description .nav .nav-item .active::after {
   background: #8cc32e;
   width: 100%;
+}
+.description .tab-content .tab-pane .description_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.description .tab-content .tab-pane .description_content img {
+  border: 1px dashed gray;
+  margin: 30px 0;
 }/*# sourceMappingURL=detail.css.map */
