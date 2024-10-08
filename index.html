@@ -1,833 +1,1005 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- FontAwesome 6.2.0 CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Google Font Poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- animate cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- fancybox  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <!-- (Optional) Use CSS or JS implementation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
-    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Google Font Poppins  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <!-- owl carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- animate cdn  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- fancybox  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <header>
-    <div class="header_content row g-0">
-      <div class="header_logo col-2">
-        <div class="logo_content">
-          <a href="#">
-            <img src="./img/logo_c86591d6-6635-423b-9577-f0b4dbb25b44_300x.png" alt="logo" />
-          </a>
-        </div>
-      </div>
-      <div class="header_search col-1">
-        <div class="search_bg">
-          <div class="search_icon text-center">
-            <a href="#" class="text-white">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <p class="search_text">SEARCH</p>
+  <body>
+    <header>
+      <div class="header_content row g-0">
+        <div class="header_logo col-2">
+          <div class="logo_content">
+            <a href="#">
+              <img
+                src="./img/logo_c86591d6-6635-423b-9577-f0b4dbb25b44_300x.png"
+                alt="logo"
+              />
             </a>
           </div>
         </div>
-      </div>
-      <div class="col-9 d-flex justify-content-between align-items-center bg-white">
-        <div class="header_nav">
-          <nav>
-            <ul class="d-flex align-items-center">
-              <li class=""><a class="active" href="#">HOME</a></li>
-              <li class=""><a href="#">ABOUT US</a></li>
-              <li class=""><a href="#">CAROUSEL</a></li>
-              <li class=""><a href="#">SHOP</a></li>
-              <li class=""><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
+        <div class="header_search col-1">
+          <div class="search_bg">
+            <div class="search_icon text-center">
+              <a href="#" class="text-white">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p class="search_text">SEARCH</p>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="header_right">
-          <div class="right_content d-flex">
-            <ul class="right_menu d-flex">
-              <li class="right_item text-center">
-                <a href="#" class="right_item_content text-center">
-                  <i class="fa-regular fa-user"></i>
-                  <p class="account_text">MY ACCOUNT</p>
-                </a>
-              </li>
-              <li class="right_item text-center">
-                <a href="#" class="right_item_content text-center">
-                  <i class="fa-regular fa-heart"></i>
-                  <p class="account_text">WISHLIST</p>
-                </a>
-              </li>
-              <li class="right_item text-center">
-                <a href="#" class="right_item_content text-center">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <p class="account_text">CART</p>
-                </a>
-              </li>
-            </ul>
+        <div
+          class="col-9 d-flex justify-content-between align-items-center bg-white"
+        >
+          <div class="header_nav">
+            <nav>
+              <ul class="d-flex align-items-center">
+                <li class=""><a class="active" href="#">HOME</a></li>
+                <li class=""><a href="#">ABOUT US</a></li>
+                <li class=""><a href="#">CAROUSEL</a></li>
+                <li class=""><a href="#">SHOP</a></li>
+                <li class=""><a href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header_right">
+            <div class="right_content d-flex">
+              <ul class="right_menu d-flex">
+                <li class="right_item text-center">
+                  <a href="#" class="right_item_content text-center">
+                    <i class="fa-regular fa-user"></i>
+                    <p class="account_text">MY ACCOUNT</p>
+                  </a>
+                </li>
+                <li class="right_item text-center">
+                  <a href="#" class="right_item_content text-center">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="account_text">WISHLIST</p>
+                  </a>
+                </li>
+                <li class="right_item text-center">
+                  <a href="#" class="right_item_content text-center">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="account_text">CART</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div class="header_space"></div>
+    </header>
+    <div class="header_space"></div>
 
-  <section class="pc_carousel">
-    <div class="owl-carousel owl-theme" id="owl-banner">
-      <div class="carousel_item slide-1">
-        <div class="carousel_info">
-          <div class="container">
-            <div class="carousel_content position-absolute">
-              <div class="caption-1 animate__animated animate__fadeInRight">
-                THE
-                <span>SHOE</span>
-                THAT ADAPTS TO YOU
-              </div>
-              <div class="caption-2">TENNIS SHOE</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel_item carousel_item2">
-        <div class="carousel_info">
-          <div class="container">
-            <div class="carousel_content position-absolute">
-              <div class="caption-1">
-                THE
-                <span>SHOE</span>
-                THAT ADAPTS TO YOU
-              </div>
-              <div class="caption-2">STREET STYLE</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel_item carousel_item3">
-        <div class="carousel_info">
-          <div class="container">
-            <div class="carousel_content position-absolute">
-              <div class="caption-1">
-                THE
-                <span>SHOE</span>
-                THAT ADAPTS TO YOU
-              </div>
-              <div class="caption-2">FOOTBALL SHOE</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="represent_product py-5">
-    <div class="container py-5">
-      <div class="represent_content row g-3">
-        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
-          <div class="represent_item wow animate__animated animate__zoomIn">
-            <div class="represent_img">
-              <img src="./img/flip1.png" alt="" />
-            </div>
-            <div class="represent_text">
-              <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
-              <h3>RUNNING SHOES</h3>
-              <p class="text_price">$90.00 <span>$65.00</span></p>
-              <a href="#">SHOP NOW >></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
-          <div class="represent_item wow animate__animated animate__zoomIn">
-            <div class="represent_img">
-              <img src="./img/flip1.png" alt="" />
-            </div>
-            <div class="represent_text">
-              <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
-              <h3>RUNNING SHOES</h3>
-              <p class="text_price">$90.00 <span>$65.00</span></p>
-              <a href="#">SHOP NOW >></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
-          <div class="represent_item wow animate__animated animate__zoomIn">
-            <div class="represent_img">
-              <img src="./img/flip1.png" alt="" />
-            </div>
-            <div class="represent_text">
-              <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
-              <h3>RUNNING SHOES</h3>
-              <p class="text_price">$90.00 <span>$65.00</span></p>
-              <a href="#">SHOP NOW >></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sell_product">
-    <div class="container">
-      <div class="sell_content">
-        <ul class="nav nav-pills mb-3 row g-4" id="pills-tab" role="tablist">
-          <div class="col-md-6 col-lg-4 col-xl-4">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-bestSeller-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-bestSeller" type="button" role="tab" aria-controls="pills-bestSeller"
-                aria-selected="true">
-                <div class="button_content d-flex align-items-end">
-                  <div class="button_check"><i class="fa-solid fa-check"></i></div>
-                  <div class="button_text">
-                    <p class="text_title">Best</p>
-                    <p class="text_main">Sellers</p>
-                  </div>
+    <section class="pc_carousel">
+      <div class="owl-carousel owl-theme" id="owl-banner">
+        <div class="carousel_item slide-1">
+          <div class="carousel_info">
+            <div class="container">
+              <div class="carousel_content position-absolute">
+                <div class="caption-1 animate__animated animate__fadeInRight">
+                  THE
+                  <span>SHOE</span>
+                  THAT ADAPTS TO YOU
                 </div>
-              </button>
-            </li>
+                <div class="caption-2">TENNIS SHOE</div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-4">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-newArrival-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-newArrival" type="button" role="tab" aria-controls="pills-newArrival"
-                aria-selected="false">
-                <div class="button_content d-flex align-items-end">
-                  <div class="button_check"><i class="fa-solid fa-check"></i></div>
-                  <div class="button_text">
-                    <p class="text_title">NEW</p>
-                    <p class="text_main">ARRIVAL</p>
-                  </div>
+        </div>
+        <div class="carousel_item carousel_item2">
+          <div class="carousel_info">
+            <div class="container">
+              <div class="carousel_content position-absolute">
+                <div class="caption-1">
+                  THE
+                  <span>SHOE</span>
+                  THAT ADAPTS TO YOU
                 </div>
-              </button>
-            </li>
+                <div class="caption-2">STREET STYLE</div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-4">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-topTrending-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-topTrending" type="button" role="tab" aria-controls="pills-topTrending"
-                aria-selected="false">
-                <div class="button_content d-flex align-items-end">
-                  <div class="button_check"><i class="fa-solid fa-check"></i></div>
-                  <div class="button_text">
-                    <p class="text_title">TOP</p>
-                    <p class="text_main">TRENDING</p>
-                  </div>
+        </div>
+        <div class="carousel_item carousel_item3">
+          <div class="carousel_info">
+            <div class="container">
+              <div class="carousel_content position-absolute">
+                <div class="caption-1">
+                  THE
+                  <span>SHOE</span>
+                  THAT ADAPTS TO YOU
                 </div>
-              </button>
-            </li>
-          </div>
-        </ul>
-
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-bestSeller" role="tabpanel"
-            aria-labelledby="pills-bestSeller-tab" tabindex="0">
-            <div class="row g-5 product_item_container" id="bestSellerContainer"></div>
-          </div>
-          <div class="tab-pane fade" id="pills-newArrival" role="tabpanel" aria-labelledby="pills-newArrival-tab"
-            tabindex="0">
-            <div class="row g-5 product_item_container" id="newArrivalContainer"></div>
-          </div>
-          <div class="tab-pane fade" id="pills-topTrending" role="tabpanel" aria-labelledby="pills-topTrending-tab"
-            tabindex="0">
-            <div class="row g-5 product_item_container" id="topTrendingContainer"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="feature_product">
-    <div class="container">
-      <div class="feature_content">
-        <div class="row">
-          <div class="feature_img col-xl-6 col-lg-12 col-md-12 col-sm-12">
-            <img src="./img/image_features_42ebc162-66b0-4250-b89c-7ad02f6c937e_600x.png" alt="" />
-          </div>
-          <div class="feature_text col-xl-6 col-lg-12 col-md-12 col-sm-12">
-            <div class="feature_info">
-              <div class="span_feature">
-                <span>Lukmall Men</span>
-                Running Sneakers Jogging
+                <div class="caption-2">FOOTBALL SHOE</div>
               </div>
-              <div class="title_feature">
-                Workout Athletic Footwear Outdoor Sport Shoe
-              </div>
-              <div class="sub_feature">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse bibendum massa tellus, at tempor arcu vestibulum
-                vel. Nunc viverra augue at ante lobortis, ultrices aliquam
-                purus bibendum. Suspendisse vitae est metus. Suspendisse
-                varius laoreet ligula, eu dictum ligula bibendum sit amet.
-                Duis nisl est, sagittis id massa id, pharetra vestibulum
-                velit.
-              </div>
-              <a href="#" class="d-inline-block">
-                <span class="">Buy Now</span>
-              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="product">
-    <div class="container">
-      <!-- title  -->
-      <div class="product_title">
-        <div class="title_block">
-          <span>running
-            <p>shoes</p>
-          </span>
-        </div>
-        <div class="sub_title">
-          <span>
-            Nam maximus, purus quis tincidunt semper, felis tellus mole stie
-            nulla <br />
-            in finibus erat magna et tortor. Phasellus a magna lobortis
-          </span>
-        </div>
-      </div>
-      <!-- content  -->
-      <div class="product_content">
-        <div class="owl-carousel" id="owl-product">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="express">
-    <div class="container">
-      <div class="express_content">
-        <div class="express_item">
-          <div class="express_img">
-            <img src="./img/icon_policy-1_100x.png" alt="" />
-          </div>
-          <div class="express_info">
-            <h3>Express Shipping</h3>
-            <p>
-              Lorem ipsum dolor sit amet consecte <br />adipiscing elit
-              pellentesque
-            </p>
-          </div>
-        </div>
-        <div class="express_item">
-          <div class="express_img">
-            <img src="./img/icon_policy-2_100x.png" alt="" />
-          </div>
-          <div class="express_info">
-            <h3>Express Shipping</h3>
-            <p>
-              Lorem ipsum dolor sit amet consecte <br />adipiscing elit
-              pellentesque
-            </p>
-          </div>
-        </div>
-        <div class="express_item">
-          <div class="express_img">
-            <img src="./img/icon_policy-3_100x.png" alt="" />
-          </div>
-          <div class="express_info">
-            <h3>Express Shipping</h3>
-            <p>
-              Lorem ipsum dolor sit amet consecte <br />adipiscing elit
-              pellentesque
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="latest">
-    <div class="container">
-      <div class="latest_title">
-        <div class="latest_title_block">
-          <span>Latest
-            <p>Blog Post</p>
-          </span>
-        </div>
-        <div class="latest_sub_title">
-          <span>
-            Nam maximus, purus quis tincidunt semper, felis tellus mole stie
-            nulla in <br />
-            finibus erat magna et tortor. Phasellus a magna lobortis
-          </span>
-        </div>
-      </div>
-      <div class="latest_content">
-        <div class="owl-carousel owl-theme" id="owl-latest">
-          <div class="latest_item">
-            <div class="latest_img">
-              <a href="">
-                <img src="./img/blog-1_570x.jpg" alt="" />
-              </a>
-            </div>
+    </section>
 
-            <div class="latest_text">
-              <a href="">Lorem ipsum dolor sit amet consectetuer adipiscing</a>
-              <span>
-                Lorem Ipsum is simply dummy text of the printing and typeset
-                ting industry.
-                <p>Lorem Ipsum has been the industry's standard...</p>
-              </span>
-            </div>
-            <div class="latest_date">
-              <p class="date_first">25</p>
-              <p>JUN</p>
-            </div>
-          </div>
-          <div class="latest_item">
-            <div class="latest_img">
-              <a href="">
-                <img src="./img/blog-2_570x.jpg" alt="" />
-              </a>
-            </div>
-            <div class="latest_text">
-              <a href="">Lorem ipsum dolor sit amet consectetuer adipiscing</a>
-              <span>
-                Lorem Ipsum is simply dummy text of the printing and typeset
-                ting industry.
-                <p>Lorem Ipsum has been the industry's standard...</p>
-              </span>
-            </div>
-            <div class="latest_date">
-              <p class="date_first">25</p>
-              <p>JUN</p>
+    <section class="represent_product py-5">
+      <div class="container py-5">
+        <div class="represent_content row g-3">
+          <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
+            <div class="represent_item wow animate__animated animate__zoomIn">
+              <div class="represent_img">
+                <img src="./img/flip1.png" alt="" />
+              </div>
+              <div class="represent_text">
+                <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
+                <h3>RUNNING SHOES</h3>
+                <p class="text_price">$90.00 <span>$65.00</span></p>
+                <a href="#">SHOP NOW >></a>
+              </div>
             </div>
           </div>
-          <div class="latest_item">
-            <div class="latest_img">
-              <a href="">
-                <img src="./img/blog-3_570x.jpg" alt="" />
-              </a>
+          <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
+            <div class="represent_item wow animate__animated animate__zoomIn">
+              <div class="represent_img">
+                <img src="./img/flip1.png" alt="" />
+              </div>
+              <div class="represent_text">
+                <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
+                <h3>RUNNING SHOES</h3>
+                <p class="text_price">$90.00 <span>$65.00</span></p>
+                <a href="#">SHOP NOW >></a>
+              </div>
             </div>
-            <div class="latest_text">
-              <a href="">Lorem ipsum dolor sit amet consectetuer adipiscing</a>
-              <span>
-                Lorem Ipsum is simply dummy text of the printing and typeset
-                ting industry.
-                <p>Lorem Ipsum has been the industry's standard...</p>
-              </span>
-            </div>
-            <div class="latest_date">
-              <p class="date_first">25</p>
-              <p>JUN</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-4">
+            <div class="represent_item wow animate__animated animate__zoomIn">
+              <div class="represent_img">
+                <img src="./img/flip1.png" alt="" />
+              </div>
+              <div class="represent_text">
+                <p class="text_title">MEN - ON | SWISS PERFORMANCE</p>
+                <h3>RUNNING SHOES</h3>
+                <p class="text_price">$90.00 <span>$65.00</span></p>
+                <a href="#">SHOP NOW >></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="company">
-    <div class="container">
-      <div class="company_content">
-        <div class="owl-carousel owl-theme" id="owl-company">
-          <div class="company_item">
-            <a href="">
-              <img src="./img/brands_1_104x110@2x.jpg" alt="" />
-            </a>
-          </div>
-          <div class="company_item">
-            <a href="">
-              <img src="./img/brands_2_104x110@2x.jpg" alt="" />
-            </a>
-          </div>
-          <div class="company_item">
-            <a href="">
-              <img src="./img/brands_3_104x110@2x.jpg" alt="" />
-            </a>
-          </div>
-          <div class="company_item">
-            <a href="">
-              <img src="./img/brands_4_104x110@2x.jpg" alt="" />
-            </a>
-          </div>
-          <div class="company_item">
-            <a href="">
-              <img src="./img/brands_5_104x110@2x.jpg" alt="" />
-            </a>
-          </div>
-          <div class="company_item">
-            <a href="">
-              <img src="./img/brands_6_104x110@2x.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="gallery">
-    <div class="gallery_content">
-      <div class="owl-carousel owl-theme" id="owl-gallery">
-        <div class="gallery_item">
-          <img src="./img/gallery-1_f16118b3-c2dd-4179-bb69-38772c464ec5_960x.jpg" alt="" />
-          <!-- tạo ra 1 lớp phủ overlay -->
-          <div class="gallery_overlay">
-            <div class="overlay_icon">
-              <a href="./img/gallery-1_f16118b3-c2dd-4179-bb69-38772c464ec5_960x.jpg" data-fancybox="">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="gallery_item">
-          <img src="./img/gallery-2_173a7141-c092-4c2e-8db0-9605080d4fc3_300x300.jpg" alt="" />
-          <!-- tạo ra 1 lớp phủ overlay -->
-          <div class="gallery_overlay">
-            <div class="overlay_icon">
-              <a href="./img/gallery-2_173a7141-c092-4c2e-8db0-9605080d4fc3_300x300.jpg" data-fancybox="">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="gallery_item">
-          <img src="./img/gallery-3_60e8ff71-b5ba-4857-93aa-48c0bbc1d043_960x.jpg" alt="" />
-          <!-- tạo ra 1 lớp phủ overlay -->
-          <div class="gallery_overlay">
-            <div class="overlay_icon">
-              <a href="./img/gallery-3_60e8ff71-b5ba-4857-93aa-48c0bbc1d043_960x.jpg" data-fancybox="">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="gallery_item">
-          <img src="./img/gallery-4_d44b052e-3e7d-4c57-932f-2f8de4651057_960x.jpg" alt="" />
-          <!-- tạo ra 1 lớp phủ overlay -->
-          <div class="gallery_overlay">
-            <div class="overlay_icon">
-              <a href="./img/gallery-4_d44b052e-3e7d-4c57-932f-2f8de4651057_960x.jpg" data-fancybox="">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="gallery_item">
-          <img src="./img/gallery-5_83fc12db-164a-4a31-b48e-e5c57db0d6ef_960x.jpg" alt="" />
-          <!-- tạo ra 1 lớp phủ overlay -->
-          <div class="gallery_overlay">
-            <div class="overlay_icon">
-              <a href="./img/gallery-5_83fc12db-164a-4a31-b48e-e5c57db0d6ef_960x.jpg" data-fancybox="">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="gallery_item">
-          <img src="./img/gallery-6_aeb60c41-7dc1-416f-aa1b-c1238cb0e1b7_960x.jpg" alt="" />
-          <!-- tạo ra 1 lớp phủ overlay -->
-          <div class="gallery_overlay">
-            <div class="overlay_icon">
-              <a href="./img/gallery-6_aeb60c41-7dc1-416f-aa1b-c1238cb0e1b7_960x.jpg" data-fancybox="">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="gallery_item">
-          <img src="./img/gallery-7_2ccc81b6-4461-44b3-bd44-ad96b9e86990_960x.jpg" alt="" />
-          <!-- tạo ra 1 lớp phủ overlay -->
-          <div class="gallery_overlay">
-            <div class="overlay_icon">
-              <a href="./img/gallery-7_2ccc81b6-4461-44b3-bd44-ad96b9e86990_960x.jpg" data-fancybox="">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="gallery_item">
-          <img src="./img/gallery-8_01a673f5-e383-4bee-ab48-b68ac5b37e33_960x.jpg" alt="" />
-          <!-- tạo ra 1 lớp phủ overlay -->
-          <div class="gallery_overlay">
-            <div class="overlay_icon">
-              <a href="./img/gallery-8_01a673f5-e383-4bee-ab48-b68ac5b37e33_960x.jpg" data-fancybox="">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="gallery_item">
-          <img src="./img/gallery-9_2322e7b0-2cf8-4334-9f64-df93fa45e877_960x.jpg" alt="" />
-          <!-- tạo ra 1 lớp phủ overlay -->
-          <div class="gallery_overlay">
-            <div class="overlay_icon">
-              <a href="./img/gallery-1_f16118b3-c2dd-4179-bb69-38772c464ec5_960x.jpg" data-fancybox="">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="footer_top">
-      <div class="footer_text">
-        <h3>Newsletter</h3>
-        <p>
-          Sign up for newsletter to receive special offers and exclusive news
-          about Binova products
-        </p>
-      </div>
-      <div class="footer_form">
-        <div class="input_group">
-          <input class="email-input" type="email" placeholder="ENTER YOUR EMAIL" />
-          <button class="subscribe-button">subscribe</button>
-        </div>
-      </div>
-    </div>
-    <div class="footer_between">
+    </section>
+
+    <section class="sell_product">
       <div class="container">
-        <div class="avenger">
+        <div class="sell_content">
+          <ul class="nav nav-pills mb-3 row g-4" id="pills-tab" role="tablist">
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-bestSeller-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-bestSeller"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-bestSeller"
+                  aria-selected="true"
+                >
+                  <div class="button_content d-flex align-items-end">
+                    <div class="button_check">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="button_text">
+                      <p class="text_title">Best</p>
+                      <p class="text_main">Sellers</p>
+                    </div>
+                  </div>
+                </button>
+              </li>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-newArrival-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-newArrival"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-newArrival"
+                  aria-selected="false"
+                >
+                  <div class="button_content d-flex align-items-end">
+                    <div class="button_check">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="button_text">
+                      <p class="text_title">NEW</p>
+                      <p class="text_main">ARRIVAL</p>
+                    </div>
+                  </div>
+                </button>
+              </li>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-topTrending-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-topTrending"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-topTrending"
+                  aria-selected="false"
+                >
+                  <div class="button_content d-flex align-items-end">
+                    <div class="button_check">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="button_text">
+                      <p class="text_title">TOP</p>
+                      <p class="text_main">TRENDING</p>
+                    </div>
+                  </div>
+                </button>
+              </li>
+            </div>
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-bestSeller"
+              role="tabpanel"
+              aria-labelledby="pills-bestSeller-tab"
+              tabindex="0"
+            >
+              <div
+                class="row g-5 product_item_container"
+                id="bestSellerContainer"
+              ></div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-newArrival"
+              role="tabpanel"
+              aria-labelledby="pills-newArrival-tab"
+              tabindex="0"
+            >
+              <div
+                class="row g-5 product_item_container"
+                id="newArrivalContainer"
+              ></div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-topTrending"
+              role="tabpanel"
+              aria-labelledby="pills-topTrending-tab"
+              tabindex="0"
+            >
+              <div
+                class="row g-5 product_item_container"
+                id="topTrendingContainer"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature_product">
+      <div class="container">
+        <div class="feature_content">
           <div class="row">
-            <div class="footer_info">
-              <h2>Binova</h2>
-              <span>Call Customer Services, We Support 24/7 :</span>
-              <h5>84-0123-456-789</h5>
-              <p>Address :</p>
-              <span>PO Box 1622 Vissaosang Street West</span>
-              <div class="info_icon">
+            <div class="feature_img col-xl-6 col-lg-12 col-md-12 col-sm-12">
+              <img
+                src="./img/image_features_42ebc162-66b0-4250-b89c-7ad02f6c937e_600x.png"
+                alt=""
+              />
+            </div>
+            <div class="feature_text col-xl-6 col-lg-12 col-md-12 col-sm-12">
+              <div class="feature_info">
+                <div class="span_feature">
+                  <span>Lukmall Men</span>
+                  Running Sneakers Jogging
+                </div>
+                <div class="title_feature">
+                  Workout Athletic Footwear Outdoor Sport Shoe
+                </div>
+                <div class="sub_feature">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse bibendum massa tellus, at tempor arcu vestibulum
+                  vel. Nunc viverra augue at ante lobortis, ultrices aliquam
+                  purus bibendum. Suspendisse vitae est metus. Suspendisse
+                  varius laoreet ligula, eu dictum ligula bibendum sit amet.
+                  Duis nisl est, sagittis id massa id, pharetra vestibulum
+                  velit.
+                </div>
+                <a href="#" class="d-inline-block">
+                  <span class="">Buy Now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <!-- title  -->
+        <div class="product_title">
+          <div class="title_block">
+            <span
+              >running
+              <p>shoes</p>
+            </span>
+          </div>
+          <div class="sub_title">
+            <span>
+              Nam maximus, purus quis tincidunt semper, felis tellus mole stie
+              nulla <br />
+              in finibus erat magna et tortor. Phasellus a magna lobortis
+            </span>
+          </div>
+        </div>
+        <!-- content  -->
+        <div class="product_content">
+          <div class="owl-carousel" id="owl-product"></div>
+        </div>
+      </div>
+    </section>
+    <section class="express">
+      <div class="container">
+        <div class="express_content">
+          <div class="express_item">
+            <div class="express_img">
+              <img src="./img/icon_policy-1_100x.png" alt="" />
+            </div>
+            <div class="express_info">
+              <h3>Express Shipping</h3>
+              <p>
+                Lorem ipsum dolor sit amet consecte <br />adipiscing elit
+                pellentesque
+              </p>
+            </div>
+          </div>
+          <div class="express_item">
+            <div class="express_img">
+              <img src="./img/icon_policy-2_100x.png" alt="" />
+            </div>
+            <div class="express_info">
+              <h3>Express Shipping</h3>
+              <p>
+                Lorem ipsum dolor sit amet consecte <br />adipiscing elit
+                pellentesque
+              </p>
+            </div>
+          </div>
+          <div class="express_item">
+            <div class="express_img">
+              <img src="./img/icon_policy-3_100x.png" alt="" />
+            </div>
+            <div class="express_info">
+              <h3>Express Shipping</h3>
+              <p>
+                Lorem ipsum dolor sit amet consecte <br />adipiscing elit
+                pellentesque
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="latest">
+      <div class="container">
+        <div class="latest_title">
+          <div class="latest_title_block">
+            <span
+              >Latest
+              <p>Blog Post</p>
+            </span>
+          </div>
+          <div class="latest_sub_title">
+            <span>
+              Nam maximus, purus quis tincidunt semper, felis tellus mole stie
+              nulla in <br />
+              finibus erat magna et tortor. Phasellus a magna lobortis
+            </span>
+          </div>
+        </div>
+        <div class="latest_content">
+          <div class="owl-carousel owl-theme" id="owl-latest">
+            <div class="latest_item">
+              <div class="latest_img">
+                <a href="">
+                  <img src="./img/blog-1_570x.jpg" alt="" />
+                </a>
+              </div>
+
+              <div class="latest_text">
+                <a href=""
+                  >Lorem ipsum dolor sit amet consectetuer adipiscing</a
+                >
+                <span>
+                  Lorem Ipsum is simply dummy text of the printing and typeset
+                  ting industry.
+                  <p>Lorem Ipsum has been the industry's standard...</p>
+                </span>
+              </div>
+              <div class="latest_date">
+                <p class="date_first">25</p>
+                <p>JUN</p>
+              </div>
+            </div>
+            <div class="latest_item">
+              <div class="latest_img">
+                <a href="">
+                  <img src="./img/blog-2_570x.jpg" alt="" />
+                </a>
+              </div>
+              <div class="latest_text">
+                <a href=""
+                  >Lorem ipsum dolor sit amet consectetuer adipiscing</a
+                >
+                <span>
+                  Lorem Ipsum is simply dummy text of the printing and typeset
+                  ting industry.
+                  <p>Lorem Ipsum has been the industry's standard...</p>
+                </span>
+              </div>
+              <div class="latest_date">
+                <p class="date_first">25</p>
+                <p>JUN</p>
+              </div>
+            </div>
+            <div class="latest_item">
+              <div class="latest_img">
+                <a href="">
+                  <img src="./img/blog-3_570x.jpg" alt="" />
+                </a>
+              </div>
+              <div class="latest_text">
+                <a href=""
+                  >Lorem ipsum dolor sit amet consectetuer adipiscing</a
+                >
+                <span>
+                  Lorem Ipsum is simply dummy text of the printing and typeset
+                  ting industry.
+                  <p>Lorem Ipsum has been the industry's standard...</p>
+                </span>
+              </div>
+              <div class="latest_date">
+                <p class="date_first">25</p>
+                <p>JUN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="company">
+      <div class="container">
+        <div class="company_content">
+          <div class="owl-carousel owl-theme" id="owl-company">
+            <div class="company_item">
+              <a href="">
+                <img src="./img/brands_1_104x110@2x.jpg" alt="" />
+              </a>
+            </div>
+            <div class="company_item">
+              <a href="">
+                <img src="./img/brands_2_104x110@2x.jpg" alt="" />
+              </a>
+            </div>
+            <div class="company_item">
+              <a href="">
+                <img src="./img/brands_3_104x110@2x.jpg" alt="" />
+              </a>
+            </div>
+            <div class="company_item">
+              <a href="">
+                <img src="./img/brands_4_104x110@2x.jpg" alt="" />
+              </a>
+            </div>
+            <div class="company_item">
+              <a href="">
+                <img src="./img/brands_5_104x110@2x.jpg" alt="" />
+              </a>
+            </div>
+            <div class="company_item">
+              <a href="">
+                <img src="./img/brands_6_104x110@2x.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="gallery_content">
+        <div class="owl-carousel owl-theme" id="owl-gallery">
+          <div class="gallery_item">
+            <img
+              src="./img/gallery-1_f16118b3-c2dd-4179-bb69-38772c464ec5_960x.jpg"
+              alt=""
+            />
+            <!-- tạo ra 1 lớp phủ overlay -->
+            <div class="gallery_overlay">
+              <div class="overlay_icon">
+                <a
+                  href="./img/gallery-1_f16118b3-c2dd-4179-bb69-38772c464ec5_960x.jpg"
+                  data-fancybox=""
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item">
+            <img
+              src="./img/gallery-2_173a7141-c092-4c2e-8db0-9605080d4fc3_300x300.jpg"
+              alt=""
+            />
+            <!-- tạo ra 1 lớp phủ overlay -->
+            <div class="gallery_overlay">
+              <div class="overlay_icon">
+                <a
+                  href="./img/gallery-2_173a7141-c092-4c2e-8db0-9605080d4fc3_300x300.jpg"
+                  data-fancybox=""
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item">
+            <img
+              src="./img/gallery-3_60e8ff71-b5ba-4857-93aa-48c0bbc1d043_960x.jpg"
+              alt=""
+            />
+            <!-- tạo ra 1 lớp phủ overlay -->
+            <div class="gallery_overlay">
+              <div class="overlay_icon">
+                <a
+                  href="./img/gallery-3_60e8ff71-b5ba-4857-93aa-48c0bbc1d043_960x.jpg"
+                  data-fancybox=""
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item">
+            <img
+              src="./img/gallery-4_d44b052e-3e7d-4c57-932f-2f8de4651057_960x.jpg"
+              alt=""
+            />
+            <!-- tạo ra 1 lớp phủ overlay -->
+            <div class="gallery_overlay">
+              <div class="overlay_icon">
+                <a
+                  href="./img/gallery-4_d44b052e-3e7d-4c57-932f-2f8de4651057_960x.jpg"
+                  data-fancybox=""
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item">
+            <img
+              src="./img/gallery-5_83fc12db-164a-4a31-b48e-e5c57db0d6ef_960x.jpg"
+              alt=""
+            />
+            <!-- tạo ra 1 lớp phủ overlay -->
+            <div class="gallery_overlay">
+              <div class="overlay_icon">
+                <a
+                  href="./img/gallery-5_83fc12db-164a-4a31-b48e-e5c57db0d6ef_960x.jpg"
+                  data-fancybox=""
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item">
+            <img
+              src="./img/gallery-6_aeb60c41-7dc1-416f-aa1b-c1238cb0e1b7_960x.jpg"
+              alt=""
+            />
+            <!-- tạo ra 1 lớp phủ overlay -->
+            <div class="gallery_overlay">
+              <div class="overlay_icon">
+                <a
+                  href="./img/gallery-6_aeb60c41-7dc1-416f-aa1b-c1238cb0e1b7_960x.jpg"
+                  data-fancybox=""
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item">
+            <img
+              src="./img/gallery-7_2ccc81b6-4461-44b3-bd44-ad96b9e86990_960x.jpg"
+              alt=""
+            />
+            <!-- tạo ra 1 lớp phủ overlay -->
+            <div class="gallery_overlay">
+              <div class="overlay_icon">
+                <a
+                  href="./img/gallery-7_2ccc81b6-4461-44b3-bd44-ad96b9e86990_960x.jpg"
+                  data-fancybox=""
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item">
+            <img
+              src="./img/gallery-8_01a673f5-e383-4bee-ab48-b68ac5b37e33_960x.jpg"
+              alt=""
+            />
+            <!-- tạo ra 1 lớp phủ overlay -->
+            <div class="gallery_overlay">
+              <div class="overlay_icon">
+                <a
+                  href="./img/gallery-8_01a673f5-e383-4bee-ab48-b68ac5b37e33_960x.jpg"
+                  data-fancybox=""
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item">
+            <img
+              src="./img/gallery-9_2322e7b0-2cf8-4334-9f64-df93fa45e877_960x.jpg"
+              alt=""
+            />
+            <!-- tạo ra 1 lớp phủ overlay -->
+            <div class="gallery_overlay">
+              <div class="overlay_icon">
+                <a
+                  href="./img/gallery-1_f16118b3-c2dd-4179-bb69-38772c464ec5_960x.jpg"
+                  data-fancybox=""
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_top">
+        <div class="footer_text">
+          <h3>Newsletter</h3>
+          <p>
+            Sign up for newsletter to receive special offers and exclusive news
+            about Binova products
+          </p>
+        </div>
+        <div class="footer_form">
+          <div class="input_group">
+            <input
+              class="email-input"
+              type="email"
+              placeholder="ENTER YOUR EMAIL"
+            />
+            <button class="subscribe-button">subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer_between">
+        <div class="container">
+          <div class="avenger">
+            <div class="row">
+              <div class="footer_info">
+                <h2>Binova</h2>
+                <span>Call Customer Services, We Support 24/7 :</span>
+                <h5>84-0123-456-789</h5>
+                <p>Address :</p>
+                <span>PO Box 1622 Vissaosang Street West</span>
+                <div class="info_icon">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-vimeo-v"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_customer">
+                <h4>CUSTOMER SERVICE</h4>
                 <ul>
-                  <li>
-                    <a href="">
-                      <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-brands fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-brands fa-pinterest-p"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-brands fa-vimeo-v"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-brands fa-instagram"></i>
-                    </a>
-                  </li>
+                  <li><a href="">Contact us</a></li>
+                  <li><a href="">Help and advice</a></li>
+                  <li><a href="">Shipping & Returns</a></li>
+                  <li><a href="">Terms and conditions</a></li>
+                  <li><a href="">Refund Policy</a></li>
+                </ul>
+              </div>
+              <div class="footer_about">
+                <h4>About Us</h4>
+                <ul>
+                  <li><a href="">Who We Are ?</a></li>
+                  <li><a href="">Corporate Responsibility</a></li>
+                  <li><a href="">California Laws</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Privacy Policy</a></li>
                 </ul>
               </div>
             </div>
-            <div class="footer_customer">
-              <h4>CUSTOMER SERVICE</h4>
-              <ul>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Help and advice</a></li>
-                <li><a href="">Shipping & Returns</a></li>
-                <li><a href="">Terms and conditions</a></li>
-                <li><a href="">Refund Policy</a></li>
-              </ul>
-            </div>
-            <div class="footer_about">
-              <h4>About Us</h4>
-              <ul>
-                <li><a href="">Who We Are ?</a></li>
-                <li><a href="">Corporate Responsibility</a></li>
-                <li><a href="">California Laws</a></li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">Privacy Policy</a></li>
-              </ul>
+          </div>
+        </div>
+        <div class="footer_coppyright">
+          <div class="container">
+            <div class="footer_group">
+              <div class="coppyright">
+                <p>Copyright © 2019 Vinovathemes. All rights reserved.</p>
+              </div>
+              <div class="coppy_img">
+                <img src="./img/payment-footer_300x.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer_coppyright">
-        <div class="container">
-          <div class="footer_group">
-            <div class="coppyright">
-              <p>Copyright © 2019 Vinovathemes. All rights reserved.</p>
-            </div>
-            <div class="coppy_img">
-              <img src="./img/payment-footer_300x.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <a href="#header" class="back_to_top cd-top cd-top--is-visible cd-top--fade-out text-replace js-cd-top">
-    <i class="fa-solid fa-angle-up"></i>
-  </a>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
+    <a
+      href="#header"
+      class="back_to_top cd-top cd-top--is-visible cd-top--fade-out text-replace js-cd-top"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-  <!-- jquery min  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- jquery-migrate -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
-    integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- jquery waypoints -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- owl-carousel -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- back to top  -->
-  <script src="./utils/back-to-top-master/assets/js/util.js"></script>
-  <script src="./utils/back-to-top-master/assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery min  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- jquery-migrate -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+      integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- jquery waypoints -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- owl-carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- back to top  -->
+    <script src="./utils/back-to-top-master/assets/js/util.js"></script>
+    <script src="./utils/back-to-top-master/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-  <!-- wow js  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- fancybox  -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script>
-    Fancybox.bind("[data-fancybox]", {
-      // Your custom options
-    });
-  </script>
-  <script>
-    new WOW().init();
-  </script>
+    <!-- wow js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- fancybox  -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+    </script>
+    <script>
+      new WOW().init();
+    </script>
 
-  <script src="./js/index.js"></script>
-  <script src="./validation/validation.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./validation/validation.js"></script>
 
-  <script type="text/JavaScript">
+    <script type="text/JavaScript">
       window.addEventListener("scroll", function () {
           let header = document.querySelector("header");
           header.classList.toggle("sticky", window.scrollY > 0)
       })
     </script>
 
-  <script>
-    $(document).ready(function () {
-      var owl = $("#owl-banner");
+    <script>
+      $(document).ready(function () {
+        var owl = $("#owl-banner");
 
-      owl.owlCarousel({
-        loop: true,
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        dots: true,
-        animateOut: "fadeOut",
+        owl.owlCarousel({
+          loop: true,
+          items: 1,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          dots: true,
+          animateOut: "fadeOut",
+        });
       });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      let owl1 = $("#owl-product");
-      owl1.owlCarousel({
+    </script>
+    <script>
+      $(document).ready(function () {
+        let owl1 = $("#owl-product");
+        owl1.owlCarousel({
+          loop: false,
+          margin: 2,
+          nav: true,
+          dots: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            576: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        let owl2 = $("#owl-latest");
+        owl2.owlCarousel({
+          loop: false,
+          margin: 2,
+          nav: false,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            576: {
+              items: 2,
+            },
+          },
+        });
+      });
+    </script>
+    <script>
+      let owl3 = $("#owl-company");
+      owl3.owlCarousel({
         loop: false,
-        margin: 2,
-        nav: true,
-        dots: true,
+        margin: 10,
+
+        dots: false,
+        nav: false,
         responsive: {
           0: {
             items: 1,
           },
-          576: {
+          600: {
             items: 3,
+          },
+          1000: {
+            items: 6,
           },
         },
       });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      let owl2 = $("#owl-latest");
-      owl2.owlCarousel({
+    </script>
+    <script>
+      let owl4 = $("#owl-gallery");
+      owl4.owlCarousel({
         loop: false,
-        margin: 2,
-        nav: false,
+        margin: 10,
+        nav: true,
         dots: false,
         responsive: {
           0: {
             items: 1,
           },
-          576: {
-            items: 2,
+          600: {
+            items: 6,
           },
         },
       });
-    });
-  </script>
-  <script>
-    let owl3 = $("#owl-company");
-    owl3.owlCarousel({
-      loop: false,
-      margin: 10,
-
-      dots: false,
-      nav: false,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 3,
-        },
-        1000: {
-          items: 6,
-        },
-      },
-    });
-  </script>
-  <script>
-    let owl4 = $("#owl-gallery");
-    owl4.owlCarousel({
-      loop: false,
-      margin: 10,
-      nav: true,
-      dots: false,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 6,
-        },
-      },
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

@@ -1,0 +1,350 @@
+@charset "UTF-8";
+.register {
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+.register .register_nav {
+  width: 100%;
+  height: 70px;
+  background-color: #f3f3f3;
+}
+.register .register_nav nav ul {
+  display: flex;
+}
+.register .register_nav nav ul li {
+  margin-top: 25px;
+}
+.register .register_nav nav ul li a {
+  color: #666;
+  font-size: 12px;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+.register .register_nav nav ul li a:hover {
+  color: #8cc32e;
+}
+.register .register_nav nav ul li span {
+  color: #666;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.register .register_form {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+.register .register_form .title_block {
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e8;
+  padding-bottom: 8px;
+  color: #000;
+  position: relative;
+}
+.register .register_form .title_block::after {
+  content: "";
+  display: block;
+  left: 0;
+  bottom: -1px;
+  height: 1px;
+  width: 200px;
+  position: absolute;
+  background-color: #f7af24;
+}
+.register .register_form .block_form_login p {
+  font-size: 13px;
+  padding: 8px 0;
+  color: #666;
+}
+.register .register_form .block_form_login .form_name {
+  color: #e5e5e8;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  transition: all 0.3s;
+}
+.register .register_form .block_form_login .form_name svg {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+.register .register_form .block_form_login .form_name input {
+  position: absolute;
+  border: none;
+  margin-left: 30px;
+  height: 45px;
+  border-left: 1px solid #e5e5e8;
+}
+.register .register_form .block_form_login .form_name:hover {
+  border: 1px solid #8cc32e;
+}
+.register .register_form .block_form_login .form_phone {
+  color: #e5e5e8;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+.register .register_form .block_form_login .form_phone:hover {
+  border: 1px solid #8cc32e;
+}
+.register .register_form .block_form_login .form_phone svg {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+.register .register_form .block_form_login .form_phone input {
+  position: absolute;
+  border: none;
+  margin-left: 30px;
+  height: 45px;
+  border-left: 1px solid #e5e5e8;
+}
+.register .register_form .block_form_login .form_email {
+  color: #e5e5e8;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+.register .register_form .block_form_login .form_email:hover {
+  border: 1px solid #8cc32e;
+}
+.register .register_form .block_form_login .form_email svg {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+.register .register_form .block_form_login .form_email input {
+  position: absolute;
+  border: none;
+  margin-left: 30px;
+  height: 45px;
+  border-left: 1px solid #e5e5e8;
+}
+.register .register_form .block_form_login .form_password {
+  color: #e5e5e8;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+  transition: all 0.3s;
+}
+.register .register_form .block_form_login .form_password:hover {
+  border: 1px solid #8cc32e;
+}
+.register .register_form .block_form_login .form_password svg {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+.register .register_form .block_form_login .form_password input {
+  position: absolute;
+  border: none;
+  margin-left: 30px;
+  height: 45px;
+  border-left: 1px solid #e5e5e8;
+}
+.register .register_form .block_form_login .form_gioiTinh {
+  display: flex;
+  margin: 20px 0;
+}
+.register .register_form .block_form_login .form_gioiTinh .form-check {
+  margin: 0 20px;
+}
+.register .register_form .block_form_login .form_checkbox {
+  margin: 10px 0;
+}
+.register .register_form .block_form_login .form_checkbox .custom_checkbox {
+  color: #bbb;
+}
+.register .register_form .block_form_login .form_checkbox .custom_checkbox .custom_input input {
+  height: 18px;
+  width: 18px;
+}
+.register .register_form .block_form_login .form_checkbox .custom_checkbox span {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.register .register_form .block_form_login .bank_login {
+  margin-bottom: 15px;
+}
+.register .register_form .block_form_login .bank_login span {
+  font-size: 12px;
+  color: #666;
+}
+.register .register_form .block_form_login .bank_login span a {
+  color: #6aa1da;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+.register .register_form .block_form_login .bank_login span a:hover {
+  color: #8cc32e;
+}
+.register .register_form .block_form_login .form_submit .btn-dark {
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.register .register_form .block_form_login .form_submit .btn-dark:hover {
+  background-color: #8cc32e;
+  border: 1px solid #8cc32e;
+}
+
+footer .footer_top {
+  background-color: #002b51;
+  height: 200px;
+}
+footer .footer_top .footer_text {
+  text-align: center;
+  padding-top: 80px;
+}
+footer .footer_top .footer_text h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+}
+footer .footer_top .footer_text p {
+  color: #8cc32e;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+footer .footer_top .footer_form .input_group {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer .footer_top .footer_form .input_group .email-input {
+  width: 100%;
+  padding: 15px;
+  padding-right: 140px; /* Chừa khoảng trống để nút không chồng lên text */
+  border: none;
+  font-size: 14px;
+  color: #ccc;
+  outline: none;
+  box-sizing: border-box;
+}
+footer .footer_top .footer_form .input_group .subscribe-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #8cc63f;
+  color: white;
+  padding: 0 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 0 5px 5px 0;
+}
+footer .footer_top .footer_form .input_group .subscribe-button:hover {
+  background-color: #7bbd35;
+}
+footer .footer_between {
+  background-color: #00305b;
+  height: 500px;
+  padding: 40px 0;
+}
+footer .footer_between .avenger .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .footer_between .avenger .row .footer_info {
+  margin-top: 80px;
+}
+footer .footer_between .avenger .row .footer_info h2 {
+  font-size: 36px;
+  color: #8cc32e;
+}
+footer .footer_between .avenger .row .footer_info span {
+  font-size: 14px;
+  color: #fff;
+}
+footer .footer_between .avenger .row .footer_info h5 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #8cc32e;
+}
+footer .footer_between .avenger .row .footer_info p {
+  margin-top: 40px;
+  font-size: 15px;
+  color: #8cc32e;
+}
+footer .footer_between .avenger .row .footer_info .info_icon {
+  margin-bottom: 30px;
+}
+footer .footer_between .avenger .row .footer_info .info_icon ul {
+  display: flex;
+  margin-top: 50px;
+}
+footer .footer_between .avenger .row .footer_info .info_icon ul li a {
+  color: #fff;
+  margin-right: 20px;
+}
+footer .footer_between .avenger .row .footer_customer {
+  color: #fff;
+  margin-top: 90px;
+}
+footer .footer_between .avenger .row .footer_customer h4 {
+  margin-left: 30px;
+  font-size: 15px;
+  font-weight: 600;
+}
+footer .footer_between .avenger .row .footer_customer ul li a {
+  color: white;
+  font-size: 13px;
+  line-height: 30px;
+  transition: all 0.3s;
+}
+footer .footer_between .avenger .row .footer_customer ul li a:hover {
+  color: #8cc32e;
+}
+footer .footer_between .avenger .row .footer_about {
+  color: #fff;
+  margin-top: 90px;
+}
+footer .footer_between .avenger .row .footer_about h4 {
+  margin-left: 30px;
+  font-size: 15px;
+  font-weight: 600;
+}
+footer .footer_between .avenger .row .footer_about ul li a {
+  color: white;
+  font-size: 13px;
+  line-height: 30px;
+  transition: all 0.3s;
+}
+footer .footer_between .avenger .row .footer_about ul li a:hover {
+  color: #8cc32e;
+}
+footer .footer_between .footer_coppyright {
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .footer_between .footer_coppyright .footer_group {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_between .footer_coppyright .footer_group .coppyright p {
+  color: white;
+  font-size: 12px;
+}/*# sourceMappingURL=register.css.map */
