@@ -51,6 +51,18 @@
       }
     }
     .block_form_login {
+      .theThongBao {
+        width: 100%;
+        height: 30px;
+        border: 1px solid red;
+        border-radius: 10px;
+        margin: 10px 0;
+        opacity: 0;
+        padding: 20px;
+        line-height: 0;
+        color: red;
+        transition: all 0.5s;
+      }
       p {
         font-size: 13px;
         padding: 8px 0;
@@ -77,6 +89,7 @@
           margin-left: 30px;
           height: 45px;
           border-left: 1px solid #e5e5e8;
+          width: 95%;
         }
         &:hover {
           border: 1px solid #8cc32e;
@@ -107,6 +120,7 @@
           margin-left: 30px;
           height: 45px;
           border-left: 1px solid #e5e5e8;
+          width: 95%;
         }
       }
       .form_email {
@@ -134,6 +148,7 @@
           margin-left: 30px;
           height: 45px;
           border-left: 1px solid #e5e5e8;
+          width: 95%;
         }
       }
       .form_password {
@@ -161,6 +176,7 @@
           margin-left: 30px;
           height: 45px;
           border-left: 1px solid #e5e5e8;
+          width: 95%;
         }
       }
       .form_gioiTinh {
@@ -210,169 +226,6 @@
             background-color: #8cc32e;
             border: 1px solid #8cc32e;
           }
-        }
-      }
-    }
-  }
-}
-footer {
-  .footer_top {
-    background-color: #002b51;
-    height: 200px;
-    .footer_text {
-      text-align: center;
-      padding-top: 80px;
-      h3 {
-        font-size: 26px;
-        font-weight: 600;
-        color: white;
-      }
-      p {
-        color: #8cc32e;
-        font-size: 12px;
-        text-transform: uppercase;
-      }
-    }
-    .footer_form {
-      .input_group {
-        position: relative;
-        max-width: 600px;
-        margin: 40px auto;
-        background-color: #fff;
-        border-radius: 5px;
-        overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        .email-input {
-          width: 100%;
-          padding: 15px;
-          padding-right: 140px; /* Chừa khoảng trống để nút không chồng lên text */
-          border: none;
-          font-size: 14px;
-          color: #ccc;
-          outline: none;
-          box-sizing: border-box;
-        }
-        .subscribe-button {
-          position: absolute;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          background-color: #8cc63f;
-          color: white;
-          padding: 0 25px;
-          border: none;
-          font-weight: bold;
-          cursor: pointer;
-          text-transform: uppercase;
-          border-radius: 0 5px 5px 0;
-          &:hover {
-            background-color: #7bbd35;
-          }
-        }
-      }
-    }
-  }
-  .footer_between {
-    background-color: #00305b;
-    height: 500px;
-    padding: 40px 0;
-    .avenger {
-      .row {
-        display: grid;
-        grid-template-columns: repeat((3, 1fr));
-        .footer_info {
-          margin-top: 80px;
-          h2 {
-            font-size: 36px;
-            color: #8cc32e;
-          }
-          span {
-            font-size: 14px;
-            color: #fff;
-          }
-          h5 {
-            font-size: 17px;
-            font-weight: 500;
-            color: #8cc32e;
-          }
-          p {
-            margin-top: 40px;
-            font-size: 15px;
-            color: #8cc32e;
-          }
-          .info_icon {
-            margin-bottom: 30px;
-            ul {
-              display: flex;
-              margin-top: 50px;
-              li {
-                a {
-                  color: #fff;
-                  margin-right: 20px;
-                }
-              }
-            }
-          }
-        }
-        .footer_customer {
-          color: #fff;
-          margin-top: 90px;
-          h4 {
-            margin-left: 30px;
-            font-size: 15px;
-            font-weight: 600;
-          }
-          ul {
-            li {
-              a {
-                color: white;
-                font-size: 13px;
-                line-height: 30px;
-                transition: all 0.3s;
-                &:hover {
-                  color: #8cc32e;
-                }
-              }
-            }
-          }
-        }
-        .footer_about {
-          color: #fff;
-          margin-top: 90px;
-          h4 {
-            margin-left: 30px;
-            font-size: 15px;
-            font-weight: 600;
-          }
-          ul {
-            li {
-              a {
-                color: white;
-                font-size: 13px;
-                line-height: 30px;
-                transition: all 0.3s;
-                &:hover {
-                  color: #8cc32e;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .footer_coppyright {
-      padding-top: 40px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      .footer_group {
-        display: flex;
-        justify-content: space-between;
-        .coppyright {
-          p {
-            color: white;
-            font-size: 12px;
-          }
-        }
-        .coppy_img {
         }
       }
     }

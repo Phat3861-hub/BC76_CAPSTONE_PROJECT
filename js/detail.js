@@ -42,6 +42,7 @@ function fetchProductDetails(productId) {
 }
 
 function renderProductDetails(product) {
+  document.querySelector("title").textContent = product.name;
   document.querySelector(".main_img img").src = product.image;
   document.querySelector(".info_title h1").textContent = product.name;
   document.querySelector(".info_price").textContent = `$${product.price}`;

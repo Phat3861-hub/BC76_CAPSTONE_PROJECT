@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -10,10 +11,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-div.disabled {
-  overflow-x: hidden; //horizontal
-  overflow-y: scroll; //vertical
-}
+
 li {
   list-style: none;
 }
