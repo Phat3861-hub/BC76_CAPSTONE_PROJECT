@@ -62,7 +62,6 @@ function renderDataProduct(products, containerId) {
   }
 }
 
-// Fetch and render products in Owl Carousel
 function getProductData() {
   http
     .get("/")
@@ -85,7 +84,7 @@ function renderProductCarousel(products) {
       <div class="product_item">
         <div class="product_info">
           <a href="./html/detail.html?productid=${id}">
-            <img src="${image}"  height="350" alt="${name}" />
+            <img src="${image}" height="350" alt="${name}" />
           </a>
           <span>
             <a href="./html/detail.html?productid=${id}">${name}</a>
@@ -113,8 +112,21 @@ function renderProductCarousel(products) {
     `;
   });
 
-  const carouselContainer = document.getElementById("owl-product");
-  carouselContainer.innerHTML = content;
+  const carouselContainer = $("#owl-product");
+  carouselContainer.html(content); // Chèn nội dung mới vào container
+
+  // Phá hủy Owl Carousel cũ (nếu có) trước khi khởi tạo lại
+  carouselContainer.trigger("destroy.owl.carousel");
+  carouselContainer.find(".owl-stage-outer").children().unwrap();
+  carouselContainer.removeClass("owl-center owl-loaded owl-text-select-on");
+  // Khởi tạo lại Owl Carousel với các sản phẩm mới
+  carouselContainer.owlCarousel({
+    loop: true,
+    autoWidth: true,
+    items: 3,
+    dots: true,
+    animateOut: "fadeOut",
+  });
 }
 
 function getRepresentProduct() {
